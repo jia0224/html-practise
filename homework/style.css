@@ -1,0 +1,98 @@
+html, body {
+    height: 100%; /* 確保 html 和 body 占滿整個視口高度 */
+    margin: 0; /* 移除默認邊距 */
+    display: flex;
+    flex-direction: column; /* 使元素縱向排列 */
+}
+body{
+    font-family: "Noto Sans", sans-serif;
+    background-color: #EDF2C5;
+}
+.container{
+    flex: 1;
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;   
+    display: flex;
+    flex-direction: column;
+}
+.header img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.header h1{
+    text-align: left;
+    color: #778A50;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: normal;
+    margin-bottom: 0;
+}
+.nav-menu{
+    display: flex;
+    justify-content: left;
+    background-color: #778A50;
+    gap: 10px;
+}
+.nav-menu a{
+    text-decoration: none;
+    color: #F7FBDA;
+    margin-left: 20px;
+}
+.nav-menu h2{
+    font-size: 16px;
+    line-height: normal;
+}
+.nav-menu:hover{/*滑鼠移動的動態效果*/
+    color: #db2b2b;
+}
+.main-content{
+    display: flex;
+    justify-content: space-between; 
+}
+.main-content h2{
+    background-color: #778A50;
+    color: #F7FBDA;
+    font-size: 20px;
+    line-height: 150%;
+}
+.article{
+    flex: 2;
+    margin-right: 50px;
+}
+.aside{
+    flex: 2;
+    margin-left: 50px;
+}
+.images{
+    display: flex;
+}
+.images img{
+    margin-right: 20px;
+}
+
+.images img:last-child{
+    margin-right: 0;
+}
+
+.aside-taxt{
+    background-color: #F7FBDA;
+}
+.divider{
+    border: none;
+    border-top: 1px solid #7D7D7D;
+    margin: 10px 0;
+}
+.aside-taxt{
+    color: #7D7D7D;
+    font-size: 12px;
+    line-height: normal;
+    padding: 5px;
+}
+.footer{
+    width: 100%;
+    background-color: #778A50;
+    color: #F7FBDA;
+    text-align: center;
+    font-size: 12px;
+}
